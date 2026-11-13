@@ -1,0 +1,31 @@
+flowchart LR
+    subgraph F["FRAMEWORK (fixed) \n"]
+        direction TB
+        W["Workflow"]
+        ST["Stage descriptions"]
+        SK["Skills"]
+        T["Templates"]
+
+        W --> ST --> SK
+        T --> SK
+    end
+
+    H["Researcher"]
+    A["AI agent"]
+
+    subgraph P["PAPER WORKSPACE (evolve)"]
+        direction TB
+        Q["Question and tasks"]
+        R["Result descriptions"]
+        M["Mockups"]
+        E["Evidence matrix"]
+        G["Paper map"]
+
+        Q --> R
+        R --> E --> G
+        R --> M
+    end
+
+    F --> A
+    H <--> A
+    A <--> P

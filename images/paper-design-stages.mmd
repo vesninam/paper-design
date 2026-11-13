@@ -1,0 +1,13 @@
+flowchart LR
+    Q["1. Scientific question"]
+    T["2. Scientific tasks\n<-->\n3. Challenge tasks"]
+    R["4. Design scientific results"]
+    E["5. Evidence matrix"]
+    M["6. Paper map"]
+    L["7. State-of-the-art validation"]
+
+    Q --> T --> R --> E --> M --> L
+
+    E -. Revise .-> R
+    L -. Reconsider .-> Q
+    L -. Extend .-> R
