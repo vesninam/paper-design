@@ -1,0 +1,23 @@
+flowchart LR
+    T1["Task: Grid spacing"]
+    T2["Task: Harmonic order"]
+    T3["Task: Other technical limits"]
+
+    R2["R02: Technical limitations<br/>Multipanel figure"]
+
+    T4["Task: Phase distortion"]
+    T5["Task: Wavelength distortion"]
+    T6["Task: Position and orientation"]
+
+    R3["R03: Spatial parameter distortion<br/>Comparative analysis"]
+
+    T1 --> R2
+    T2 --> R2
+    T3 --> R2
+
+    T4 --> R3
+    T5 --> R3
+    T6 --> R3
+
+    R2 --> S["Generalized scientific<br/>conclusion"]
+    R3 --> S
