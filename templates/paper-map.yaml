@@ -1,0 +1,35 @@
+# Canonical logical map of the paper, not manuscript order.
+# Replace example IDs and paths with actual workspace entries.
+paper:
+  id: "<paper-id>"
+  question: "<scientific question>"
+  question_ref: question.md
+  tasks_ref: tasks.md
+  evidence_ref: evidence.md
+
+results:
+  R01:
+    title: "<result title>"
+    artifact: results/R01/result.md
+    supports: [T01, T02]
+    depends_on: []
+    justified_by: []
+    validated_by: []
+    compared_with: []
+    synthesizes: []
+
+  R02:
+    title: "<result title>"
+    artifact: results/R02/result.md
+    supports: [T02]
+    depends_on: [R01]
+    justified_by: []
+    validated_by: []
+    compared_with: []
+    synthesizes: []
+
+conclusions:
+  C01:
+    question: "<part of the main question to be answered>"
+    supported_by: [R01, R02]
+    actual_claim: null  # Fill only after evaluating evidence.
