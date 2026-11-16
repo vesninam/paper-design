@@ -2,7 +2,7 @@
 
 **Scenario ID:** `gec-solar-activity-demo`  
 **Type:** Guided tutorial / mock paper design  
-**Suggested location:** `framework/examples/mock-research-scenario.md`  
+**Location:** `examples/mock-research-scenario.md`
 **Purpose:** Demonstrate all seven stages of the scientific paper-design workflow using one small, deliberately non-novel investigation. This is a training scenario, not a publication proposal. No observational analysis is claimed to have been performed.
 
 ## 0. Instructions for the agent
@@ -12,7 +12,7 @@ Use this scenario only as an optional teaching aid when the researcher has no sc
 ### Entry and interaction rules
 
 1. Offer a choice: work on the researcher's own idea, or explore this short example. Explain that the example demonstrates the process, not a novel scientific discovery.
-2. If the researcher chooses the example, follow the seven stages in `framework/workflow.md`, using the corresponding stage descriptions, skills, and templates. The contents below are the fixed reference scenario, not a replacement for the framework.
+2. If the researcher chooses the example, follow the seven stages in `workflow.md`, using the corresponding stage descriptions, skills, and templates. The contents below are the fixed reference scenario, not a replacement for the framework.
 3. Present only the current stage initially. Briefly explain its purpose, show the proposed example, and ask one useful question. Allow the researcher to accept the default, discuss it, or revise it. Do not reveal all later answers unless asked for a complete walkthrough.
 4. If the researcher accepts the default, use the exact scenario question, task IDs, result IDs, relationships, mockup layouts, and reference set below. Do not randomly invent alternative scientific cases or numerical findings. Use the same example when demonstrating any individual stage.
 5. After agreement to create a demo workspace, initialize `papers/gec-solar-activity-demo/` using the normal templates. Record `mode: demo` and `scenario: gec-solar-activity-demo` in `workspace.yaml` if compatible with the workspace schema; otherwise record the mode in `question.md` and the state using the normal schema. Update the workspace after each accepted stage. The framework and this example file are read-only during paper development.

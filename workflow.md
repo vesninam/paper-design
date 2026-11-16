@@ -10,6 +10,8 @@ We use AI in several different roles: as a domain explorer, a critical reviewer,
 
 The workflow moves from an initial scientific idea to a **execution-ready blueprint of the paper**, without requiring that any scientific results have already been obtained. 
 
+For guided examples, use the consistent [mock research scenario](examples/mock-research-scenario.md), following the example guidance in `AGENTS.md`.
+
 ## **2. Detailed description of the stages**
 
 | Stage                    | Main activity                                                               | Output                                 |

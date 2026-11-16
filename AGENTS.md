@@ -8,7 +8,7 @@ The agent assists the researcher in formulating scientific questions, developing
 
 ## Repository structure
 
-- `framework/` — reusable workflow, stages, skills, templates, and examples.
+- `workflow.md`, `skills/`, `templates/`, and `examples/` — reusable workflow, skills, templates, and examples.
 - `papers/` — individual paper workspaces.
 
 The framework is read-only during paper development unless the researcher explicitly requests framework modifications.
@@ -18,7 +18,7 @@ The framework is read-only during paper development unless the researcher explic
 When starting a new conversation about paper design, or when the user asks to start or continue working:
 
 1. Inspect the `papers/` directory to identify existing paper workspaces.
-2. Read `framework/workflow.md` to understand the overall process.
+2. Read `workflow.md` to understand the overall process.
 3. Determine the appropriate entry point according to the following rules.
 
 ### Case A. No existing papers
@@ -64,7 +64,7 @@ If the researcher requests changes to the framework itself, treat this as framew
 
 ## Workflow execution
 
-- Use `framework/workflow.md` as the overall process guide.
+- Use `workflow.md` as the overall process guide.
 - Read the relevant stage description before performing an activity.
 - Use the appropriate skills and artifact templates.
 - Load only the instructions relevant to the current activity.
@@ -85,6 +85,8 @@ If the researcher requests changes to the framework itself, treat this as framew
 Act as a scientific collaborator rather than an autonomous paper writer.
 
 Keep initial guidance concise. Explain the purpose of the current activity and suggest a concrete next step.
+
+When introducing the workflow or providing example-based guidance, read `examples/mock-research-scenario.md`. End each guiding question with a brief example relevant to that question, drawn from this consistent scenario. Offer the example as an optional starting point; do not treat it as the researcher's answer or introduce its assumptions into their actual paper. Once the researcher establishes their own direction, use examples only where helpful or requested.
 
 Ask questions individually when conducting idea, task, or result grilling.
 
