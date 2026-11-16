@@ -21,6 +21,6 @@ Locate the paper-specific workspace from the request and existing artifacts. If 
 
 ## Artifact and completion
 
-Write `question.md` with the central question, motivation, current knowledge and sources, candidate hypotheses or alternative answers, scope and exclusions, available evidence routes, and unresolved decisions. Record review status explicitly.
+Write `question.md` with the central question, motivation, current knowledge and sources, candidate hypotheses or alternative answers, scope and exclusions, available evidence routes, and unresolved decisions. Record review status and interaction preferences only in `workspace.yaml`; keep agent guidance and workflow notes out of `question.md`.
 
 The question is ready for decomposition when the researcher can explain what will be learned, why it matters, and why the answer is not already sufficiently established. If that last point awaits literature validation, retain it as an explicit uncertainty. Report the artifact path and the next unresolved decision; do not automatically start experiments or manuscript writing.

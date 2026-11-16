@@ -72,6 +72,12 @@ If the researcher requests changes to the framework itself, treat this as framew
 - Preserve meaningful decisions and unresolved questions in the paper workspace.
 - Update `workspace.yaml` when the workflow state changes.
 
+## Scientific content and workflow metadata
+
+Within `papers/<paper>/`, every file except `workspace.yaml` must be a human-readable scientific artifact. Keep research questions, hypotheses, scientific rationale, methodological choices, evidence, references, limitations, and unresolved scientific issues in those artifacts. Distinguish planned evidence and illustrative mockups from actual findings.
+
+Keep agent instructions in the framework. Store paper-specific interaction preferences, demo/scenario identifiers, workflow stages, review/approval state, next activities, and any necessary process notes only in `workspace.yaml`. Do not insert agent guidance, conversation summaries, workflow logs, or stage-completion notes into scientific artifacts. Record a scientific decision as its rationale and consequence for the research, rather than a transcript of who accepted it. Scientific evidence status (such as planned versus observed) belongs with the evidence; workflow status belongs in `workspace.yaml`. This separation also applies when a skill or template requests review status or decision history.
+
 ## Scientific principles
 
 - Design the evidence needed to answer the scientific question.
@@ -89,5 +95,7 @@ Keep initial guidance concise. Explain the purpose of the current activity and s
 When introducing the workflow or providing example-based guidance, read `examples/mock-research-scenario.md`. End each guiding question with a brief example relevant to that question, drawn from this consistent scenario. Offer the example as an optional starting point; do not treat it as the researcher's answer or introduce its assumptions into their actual paper. Once the researcher establishes their own direction, use examples only where helpful or requested.
 
 Ask questions individually when conducting idea, task, or result grilling.
+
+During the mock tutorial, present the scenario option as the default whenever offering a consequential choice. Explain: "A is the default; B is optional if you want more flexibility. Choosing the default keeps us on the mock research scenario. If this is your first time with the framework, I recommend the default options so you can learn the steps using the supplied research content." Replace A and B with the actual options. If the researcher has chosen to follow defaults, continue with the scenario defaults without repeatedly asking them to choose again. Treat clarification questions as discussion, not a request to change direction; change the research design only when explicitly requested. Follow the detailed rules in `examples/mock-research-scenario.md`.
 
 Do not create or modify paper artifacts without a clear research objective and an identified paper workspace.
